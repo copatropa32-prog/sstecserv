@@ -1,0 +1,266 @@
+---
+import LayoutPrincipal from '../layouts/LayoutPrincipal.astro';
+---
+
+<LayoutPrincipal titulo="Início - Portaria, Limpeza e Terceirização">
+
+  <!-- Seção Hero / Destaque Principal -->
+  <section id="home" class="relative bg-black text-white py-20 lg:py-28 overflow-hidden">
+    <!-- Imagem de fundo com opacidade/overlay -->
+    <div class="absolute inset-0 z-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1920&auto=format&fit=crop');"></div>
+    
+    <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+      <span class="bg-red-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full tracking-wider">Excelência e Confiança</span>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black mt-4 mb-6 leading-tight">
+        Bem-vindo(a) à <span class="text-red-600">SSTEC</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+        Sua empresa de terceirização voltada para o cliente. Soluções completas em portaria, limpeza e manutenção predial em São Bernardo do Campo e região.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#servicos" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3 rounded-lg transition shadow-lg">
+          Nossos Serviços
+        </a>
+        <a href="https://wa.me/5511997283273" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-gray-100 text-black font-bold px-8 py-3 rounded-lg transition shadow-lg">
+          Fale no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards de Destaque Imediato (Portaria, Limpeza, Manutenção) -->
+  <section class="relative z-20 max-w-7xl mx-auto px-4 -mt-12 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Portaria -->
+      <div class="bg-white rounded-xl shadow-xl p-6 border-t-4 border-red-600 transform hover:-translate-y-1 transition">
+        <div class="text-red-600 font-bold text-sm uppercase tracking-wider mb-2">Segurança Patrimonial</div>
+        <h3 class="text-xl font-bold mb-3 text-black">Portaria / Controladores</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Equipe rigorosamente treinada, com recrutamento, seleção, controle de acesso e supervisão 24h.
+        </p>
+        <a href="#servicos" class="text-red-600 font-semibold text-sm hover:underline inline-flex items-center gap-1">
+          Saiba mais &rarr;
+        </a>
+      </div>
+
+      <!-- Card 2: Limpeza -->
+      <div class="bg-white rounded-xl shadow-xl p-6 border-t-4 border-black transform hover:-translate-y-1 transition">
+        <div class="text-red-600 font-bold text-sm uppercase tracking-wider mb-2">Conservação e Higiene</div>
+        <h3 class="text-xl font-bold mb-3 text-black">Limpeza e Conservação</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Equipamentos modernos e técnicas avançadas para indústrias, condomínios, clínicas e comércios.
+        </p>
+        <a href="#servicos" class="text-red-600 font-semibold text-sm hover:underline inline-flex items-center gap-1">
+          Saiba mais &rarr;
+        </a>
+      </div>
+
+      <!-- Card 3: Manutenção -->
+      <div class="bg-white rounded-xl shadow-xl p-6 border-t-4 border-red-600 transform hover:-translate-y-1 transition">
+        <div class="text-red-600 font-bold text-sm uppercase tracking-wider mb-2">Suporte Operacional</div>
+        <h3 class="text-xl font-bold mb-3 text-black">Manutenção Predial</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          Profissionais qualificados em zeladoria, recepção, serviços gerais e suporte administrativo.
+        </p>
+        <a href="#servicos" class="text-red-600 font-semibold text-sm hover:underline inline-flex items-center gap-1">
+          Saiba mais &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seção Quem Somos -->
+  <section id="quem-somos" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-red-600 font-bold text-sm uppercase tracking-wider">Sobre Nós</span>
+        <h2 class="text-3xl font-black mt-2 mb-6 text-black">Quem Somos</h2>
+        <p class="text-gray-600 mb-4 leading-relaxed">
+          Criada com a visão de facilitar a relação cliente e terceirizada, a <strong>SSTEC</strong> atua com excelência no mercado de Portaria e Limpeza desde 2014, desenvolvendo novas técnicas e metodologias de gestão.
+        </p>
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Contamos com frota de veículos personalizada e suporte operacional de ponta para que nossos parceiros possam focar totalmente em sua atividade final.
+        </p>
+        <ul class="space-y-2 text-sm font-semibold text-gray-700">
+          <li class="flex items-center gap-2">✔️ Atendimento personalizado em SBC e região</li>
+          <li class="flex items-center gap-2">✔️ Supervisão ativa e rondas periódicas</li>
+          <li class="flex items-center gap-2">✔️ Rigoroso processo de seleção de colaboradores</li>
+        </ul>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="Equipe SSTEC Serviços" class="rounded-xl shadow-2xl w-full object-cover h-[400px]">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Detalhada de Serviços -->
+  <section id="servicos" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-red-600 font-bold text-sm uppercase tracking-wider">Soluções Completas</span>
+        <h2 class="text-3xl font-black mt-2 text-black">Nossos Serviços</h2>
+        <p class="text-gray-600 mt-2">Veja detalhadamente como podemos auxiliar a segurança e a infraestrutura da sua empresa.</p>
+      </div>
+
+      <div class="space-y-12">
+        <!-- Item 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-3">
+          <div class="bg-cover bg-center min-h-[250px]" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=600&auto=format&fit=crop');"></div>
+          <div class="p-8 lg:col-span-2 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold mb-3 text-black">Portaria / Controladores de Acesso</h3>
+              <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Possuímos uma equipe de porteiros e controladores de acesso focados na segurança patrimonial, treinados para atender com cordialidade e rigor nos protocolos.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700 mb-6">
+                <div>✔️ Recrutamento e Seleção rigorosos</div>
+                <div>✔️ Levantamento de antecedentes criminais</div>
+                <div>✔️ Treinamentos operacionais constantes</div>
+                <div>✔️ Supervisão e monitoramento 24h</div>
+              </div>
+            </div>
+            <div>
+              <a href="https://wa.me/5511997283273?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Portaria" target="_blank" class="inline-block bg-red-600 text-white text-sm font-bold px-6 py-2.5 rounded-lg hover:bg-red-700 transition">
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-3">
+          <div class="bg-cover bg-center min-h-[250px]" style="background-image: url('https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=600&auto=format&fit=crop');"></div>
+          <div class="p-8 lg:col-span-2 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold mb-3 text-black">Limpeza e Conservação</h3>
+              <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Profissionais atualizados nas mais diversas técnicas de limpeza para atender indústrias, condomínios, clínicas médicas, farmacêuticas e comércios.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700 mb-6">
+                <div>✔️ Limpeza convencional e técnica</div>
+                <div>✔️ Tratamento de pisos e fachadas</div>
+                <div>✔️ Produtos de alta qualidade inclusos</div>
+                <div>✔️ Acompanhamento ativo da supervisão</div>
+              </div>
+            </div>
+            <div>
+              <a href="https://wa.me/5511997283273?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Limpeza" target="_blank" class="inline-block bg-red-600 text-white text-sm font-bold px-6 py-2.5 rounded-lg hover:bg-red-700 transition">
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-3">
+          <div class="bg-cover bg-center min-h-[250px]" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d0fbb18f86f7?q=80&w=600&auto=format&fit=crop');"></div>
+          <div class="p-8 lg:col-span-2 flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold mb-3 text-black">Manutenção Predial e Zeladoria</h3>
+              <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Contamos com profissionais qualificados selecionados por testes práticos para assegurar agilidade e eficácia na rotina do seu condomínio ou empresa.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-700 mb-6">
+                <div>✔️ Zeladoria completa</div>
+                <div>✔️ Auxiliar administrativo e Recepção</div>
+                <div>✔️ Motoristas e suporte geral</div>
+                <div>✔️ Manutenção preventiva e corretiva</div>
+              </div>
+            </div>
+            <div>
+              <a href="https://wa.me/5511997283273?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Manutenção" target="_blank" class="inline-block bg-red-600 text-white text-sm font-bold px-6 py-2.5 rounded-lg hover:bg-red-700 transition">
+                Solicitar Orçamento
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Trabalhe Conosco -->
+  <section id="trabalhe-conosco" class="py-16 bg-black text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="text-red-600 font-bold text-sm uppercase tracking-wider">Faça parte da equipe</span>
+      <h2 class="text-3xl font-black mt-2 mb-4">Trabalhe Conosco</h2>
+      <p class="text-gray-300 max-w-xl mx-auto mb-8 text-sm">
+        O Grupo SSTEC valoriza o capital humano. Envie seu currículo para o nosso e-mail ou entre em contato para fazer parte do nosso banco de talentos.
+      </p>
+      <div class="bg-white/10 p-6 rounded-xl border border-red-600/50 inline-block">
+        <p class="text-sm text-gray-300 mb-2">Envie seu currículo diretamente para:</p>
+        <a href="mailto:negocios@sstecserv.com.br" class="text-red-500 font-bold text-lg hover:underline">
+          negocios@sstecserv.com.br
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-red-600 font-bold text-sm uppercase tracking-wider">Fale Conosco</span>
+        <h2 class="text-3xl font-black mt-2 text-black">Grupo SSTEC</h2>
+        <p class="text-gray-600 mt-2">Entre em contato com a nossa equipe e tire suas dúvidas.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Informações de Contato -->
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 text-red-600 p-3 rounded-lg font-bold">📍</div>
+            <div>
+              <h4 class="font-bold text-black">Endereço</h4>
+              <p class="text-gray-600 text-sm">R. Marechal Deodoro, 879 - Sala 203, Centro, São Bernardo do Campo / SP</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 text-red-600 p-3 rounded-lg font-bold">📞</div>
+            <div>
+              <h4 class="font-bold text-black">Telefone e WhatsApp</h4>
+              <p class="text-gray-600 text-sm">(11) 4337-5187 / (11) 99728-3273</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="bg-red-100 text-red-600 p-3 rounded-lg font-bold">⏰</div>
+            <div>
+              <h4 class="font-bold text-black">Horário de Atendimento</h4>
+              <p class="text-gray-600 text-sm">De Seg. a Sex. das 9h às 17h</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de Contato Simples -->
+        <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+          <h3 class="text-xl font-bold mb-4 text-black">Envie uma mensagem</h3>
+          <form class="space-y-4" action="https://formsubmit.co/negocios@sstecserv.com.br" method="POST">
+            <div>
+              <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Nome</label>
+              <input type="text" name="nome" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-600 text-sm" placeholder="Seu nome">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Telefone</label>
+                <input type="tel" name="telefone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-600 text-sm" placeholder="(11) 99999-9999">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase text-gray-700 mb-1">E-mail</label>
+                <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-600 text-sm" placeholder="seu@email.com">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-gray-700 mb-1">Mensagem</label>
+              <textarea name="mensagem" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-red-600 text-sm" placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 rounded-lg transition text-sm uppercase tracking-wider">
+              Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</LayoutPrincipal>
